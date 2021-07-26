@@ -1,0 +1,5 @@
+include ':eKnowledgeLibrary'
+include ':commons-io-2.8.0'
+include ':eknowledge_wear'
+include ':app'
+rootProject.name = "FinalAssignment"

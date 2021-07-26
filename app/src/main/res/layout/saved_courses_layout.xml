@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvsavedcourseheading"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Android Development"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/btnSavedupdate"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="View Detail"
+                    android:layout_below="@+id/tvsavedcourseheading"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/custom_inputfield"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/purple_700" />
+
+                <TextView
+                    android:id="@+id/btnSaveddelete"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Delete"
+                    android:layout_below="@+id/tvsavedcourseheading"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:background="@drawable/custom_inputfield"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#FF0000"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

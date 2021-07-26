@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.finalassignment.ui.fragments.home.Dashboard"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.finalassignment.ui.fragments.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_mycourse"
+        android:name="com.example.finalassignment.ui.fragments.mycourse.My_Courses"
+        android:label="@string/menu_mycourses"
+        tools:layout="@layout/fragment_my__courses" />
+    <fragment
+        android:id="@+id/nav_savedcourse"
+        android:name="com.example.finalassignment.ui.fragments.saved_courses.Saved_Courses"
+        android:label="@string/menu_save"
+        tools:layout="@layout/fragment_saved__courses" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.finalassignment.ui.fragments.profile.Profile"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_postcourse"
+        android:name="com.example.finalassignment.ui.fragments.post_course.PostCourse"
+        android:label="@string/menu_postcourse"
+        tools:layout="@layout/fragment_post_course" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.finalassignment.ui.fragments.slideshow.SlideshowFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_slideshow" />
+
+</navigation>

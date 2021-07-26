@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0336CC">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Our Courses"
+                android:textSize="50sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#CBFADF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgAndroid"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/android"/>
+
+                    <TextView
+                        android:id="@+id/textAndroid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android Development"
+                        android:layout_toRightOf="@+id/imgAndroid"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.03"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txtDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meet the OS that’s optimised for how you use your phone. Helping you to manage conversations. And organising your day..."
+                        android:layout_below="@+id/textAndroid"
+                        android:layout_toRightOf="@+id/imgAndroid"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#323131"
+                        android:letterSpacing="0.03"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txtandroidnext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Resources"
+                        android:layout_below="@+id/txtDesc"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/imgAndroid"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/purple_700"
+                        android:paddingRight="20dp"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FFEB3B"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/imgWeb"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@color/white"
+                        android:src="@drawable/web"/>
+
+                    <TextView
+                        android:id="@+id/textWeb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web Api Development"
+                        android:layout_toRightOf="@+id/imgWeb"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:letterSpacing="0.03"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txtDescWeb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web development is the work involved in developing a Web site for the Internet. There are three kinds of Web developer...."
+                        android:layout_below="@+id/textWeb"
+                        android:layout_toRightOf="@+id/imgWeb"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#323131"
+                        android:letterSpacing="0.03"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txtwebnext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Resources"
+                        android:layout_below="@+id/txtDescWeb"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/imgWeb"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/purple_700"
+                        android:paddingRight="20dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#7CF46E"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/imgIot"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/iot"/>
+
+                <TextView
+                    android:id="@+id/textIot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interactive Pervasive Computing"
+                    android:layout_toRightOf="@+id/imgIot"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtDescIot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Internet of Things, or IoT for short, is about extending the power of the internet...."
+                    android:layout_below="@+id/textIot"
+                    android:layout_toRightOf="@+id/imgIot"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#323131"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtiotnext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Resources"
+                    android:layout_below="@+id/txtDescIot"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/imgIot"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/purple_700"
+                    android:paddingRight="20dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

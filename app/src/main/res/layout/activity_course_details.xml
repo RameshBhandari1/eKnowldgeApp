@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.CourseDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0547EF"
+        android:orientation="horizontal"
+        android:verticalScrollbarPosition="defaultPosition">
+
+        <ImageView
+            android:id="@+id/backbuttonDetail"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="12dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/tvCourseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Course Resourses"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+    </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#D1FFC4"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/tvCourseDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meet the OS that’s optimised for how you use your phone. Helping you to manage conversations. And organising your day..."
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/fileeeeee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="File: "
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tvCourseDesc"
+                    android:textColor="#000000"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvFileTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meet the OS that’s optimised for how you use your phone."
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/fileeeeee"
+                    android:textStyle="bold"
+                    android:textColor="#0019FA"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="postdate"
+                    android:layout_below="@+id/tvFileTitle"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#4A4848" />
+                <TextView
+                    android:id="@+id/tvSavebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Save Course"
+                    android:layout_below="@+id/tvPost"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/custom_inputfield"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/purple_700" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
